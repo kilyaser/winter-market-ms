@@ -1,0 +1,7 @@
+server:
+  port: 8190
+  servlet:
+    context-path: /winter-carts
+
+core-service:
+  url: http://localhost:8189/winter/api/v1/products/
