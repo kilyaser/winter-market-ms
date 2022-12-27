@@ -1,6 +1,6 @@
 angular.module('app', ['ngStorage']).controller('cartController', function ($scope, $http, $localStorage) {
-    const cartContextPath = 'http://localhost:8190/winter-carts/api/v1/cart'
-    const orderContextPath = 'http://localhost:8189/winter/api/v1/orders'
+    const cartContextPath = 'http://localhost:5555/cart/api/v1/cart'
+    const orderContextPath = 'http://localhost:555/cart/api/v1/orders'
 
     $scope.loadCart = function () {
         $http.get(cartContextPath)
@@ -13,6 +13,7 @@ angular.module('app', ['ngStorage']).controller('cartController', function ($sco
         $http.get(cartContextPath)
             .then(function (response) {
                 $scope.orders = response.data;
+                alert(response.data);
                 console.log(response.data);
             });
     };

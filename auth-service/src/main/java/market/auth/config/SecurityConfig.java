@@ -1,9 +1,9 @@
-package market.core.configs;
+package market.auth.config;
 
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import market.core.servicies.UserService;
+import market.auth.servicies.UserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
@@ -27,25 +27,21 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
                 .csrf().disable()
-                    .cors().disable()
-                        .authorizeHttpRequests()
-                            .requestMatchers("/secured").authenticated()
-                            .requestMatchers("/orders").authenticated()
-                                .anyRequest().permitAll()
-
+                .cors().disable()
+                .authorizeHttpRequests()
+                .requestMatchers("/secured").authenticated()
+                .requestMatchers("/orders").authenticated()
+                .anyRequest().permitAll()
                 .and()
-                    .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                    .headers().frameOptions().disable()
-
+                .headers().frameOptions().disable()
                 .and()
-                    .exceptionHandling()
-                        .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
-
+                .exceptionHandling()
+                .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
                 .and()
-                    .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class)
-                        .build();
+                .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class)
+                .build();
 
     }
 
@@ -60,6 +56,5 @@ public class SecurityConfig {
         authenticationProvider.setUserDetailsService(userService);
         return authenticationProvider;
     }
-
 
 }

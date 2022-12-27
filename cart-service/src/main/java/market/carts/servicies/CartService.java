@@ -18,7 +18,7 @@ public class CartService {
     private Cart tempCart;
 
     public void add(Long id) {
-        ProductDto product = productServiceIntegration.getProductById(id).orElseThrow(() -> new ResourceNotFoundException(String.format("Can't add product to the cart, product id:%s not found", id)));
+        ProductDto product = productServiceIntegration.getProductById(id);
         tempCart.add(product);
         log.info("tempCart size after adding " + tempCart.getItems().size());
     }

@@ -1,7 +1,7 @@
 angular.module('app', ['ngStorage']).controller('indexController', function ($scope, $http, $localStorage) {
-    const contextPath = 'http://localhost:8189/winter/api/v1/products'
-    const cartContextPath = 'http://localhost:8190/winter-carts/api/v1/cart'
-    const authPath = 'http://localhost:8189/winter/auth'
+    const contextPath = 'http://localhost:55555/core/api/v1/products'
+    const cartContextPath = 'http://localhost:5555/cart/api/v1/cart'
+    const authPath = 'http://localhost:5555/auth/token'
 
     $scope.loadProducts = function () {
         $http.get(contextPath)

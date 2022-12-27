@@ -1,11 +1,10 @@
-package market.core.servicies;
+package market.auth.servicies;
 
 import lombok.RequiredArgsConstructor;
 import market.api.ResourceNotFoundException;
-
-import market.core.repositories.UserRepository;
-import market.core.entities.Role;
-import market.core.entities.User;
+import market.auth.entities.Role;
+import market.auth.entities.User;
+import market.auth.repositories.UserRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,6 +12,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
 import java.util.Collection;
 import java.util.Optional;
 import java.util.stream.Collectors;

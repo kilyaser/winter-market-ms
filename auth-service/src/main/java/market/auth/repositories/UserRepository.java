@@ -1,9 +1,9 @@
-package market.core.repositories;
+package market.auth.repositories;
 
-import market.core.entities.User;
+
+import market.auth.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-
 
 import java.util.Optional;
 

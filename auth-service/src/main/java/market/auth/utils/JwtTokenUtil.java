@@ -1,4 +1,4 @@
-package market.core.utils;
+package market.auth.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

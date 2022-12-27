@@ -5,6 +5,7 @@ import market.core.converters.ProductConverter;
 import market.core.soap.products.GetAllProductsRequest;
 import market.core.soap.products.GetAllProductsResponse;
 import market.core.servicies.ProductService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;

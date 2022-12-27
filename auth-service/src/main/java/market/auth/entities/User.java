@@ -1,7 +1,8 @@
-package market.core.entities;
+package market.auth.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+
 import java.util.Collection;
 
 @Entity

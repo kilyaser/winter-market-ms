@@ -3,17 +3,13 @@ package market.core.servicies;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import market.api.CartDto;
-import market.api.ResourceNotFoundException;
 import market.core.converters.OrderItemConverter;
 import market.core.integration.CartServiceIntegration;
-import market.core.repositories.OrderItemRepository;
 import market.core.repositories.OrderRepository;
 import market.core.entities.Order;
 import market.core.entities.OrderItem;
-import market.core.entities.User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -23,13 +19,12 @@ import java.util.List;
 public class OrderService {
     private final CartServiceIntegration cartServiceIntegration;
     private final OrderItemConverter orderItemConverter;
-    private final OrderItemRepository orderItemRepository;
     private final OrderRepository orderRepository;
     @Transactional
-    public void creatOrder(User user) {
-        CartDto cart = cartServiceIntegration.getCurrentCart().orElseThrow(() -> new ResourceNotFoundException("Cart not found"));
+    public void creatOrder(String username) {
+        CartDto cart = cartServiceIntegration.getCurrentCart();
         Order order = new Order();
-        order.setUser(user);
+        order.setUsername(username);
         order.setTotalPrice(cart.getTotalPrice());
         List<OrderItem> items = cart.getItems().stream().map(oi -> orderItemConverter.cartItemToOrderItem(oi, order)).toList();
         order.setItems(items);

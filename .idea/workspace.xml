@@ -4,96 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bacc8f94-c6f0-42fc-9d18-f7313e47602d" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/market/api/AppError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/market/api/CartDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/market/api/CartItemDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/market/api/CategoryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/market/api/JwtRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/market/api/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/market/api/OrderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/market/api/OrderItemDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/market/api/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/market/api/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/market/api/StringResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/WinterMarketCartsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/configs/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/controllers/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/converters/CartConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/converters/CartItemConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/exceptions/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/integration/ProductServiceIntegration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/models/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/models/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/servicies/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/WinterMarketCoreApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/configs/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/configs/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/configs/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/configs/WebServiceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/controllers/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/controllers/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/controllers/ProductEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/converters/CategoryConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/converters/OrderConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/converters/OrderItemConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/converters/ProductConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/entities/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/entities/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/entities/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/entities/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/entities/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/exceptions/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/integration/CartServiceIntegration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/repositories/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/repositories/OrderItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/repositories/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/servicies/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/servicies/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/servicies/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/servicies/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/soap/products/GetAllProductsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/soap/products/GetAllProductsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/soap/products/ObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/soap/products/ProductSoapDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/soap/products/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/utils/JwtTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/db/migration/V1__init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/products.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/basket.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/bg_page.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/bear.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/cat_hairstyle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/magic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/morningcoffee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/peace.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/submarine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/maney.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/menu_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/packing.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/privacy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/returns.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/images/truck.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core-service/src/main/resources/static/style.css" afterDir="false" />
+    <list default="true" id="bacc8f94-c6f0-42fc-9d18-f7313e47602d" name="Changes" comment="Created modules core-service and cart-service. Into the core-service added integration with the cart-service. Added url for the integration into  .yaml files into core and cart services">
+      <change afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/market/auth/WinterMarketAuthApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/db.migration/V1__init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/properties/ProductServiceIntegrationProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/properties/CartServiceIntegrationProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-service/src/main/java/market/front/WinterMarketFrontApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/painter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getway-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getway-service/src/main/java/market/getway/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getway-service/src/main/java/market/getway/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getway-service/src/main/java/market/getway/WinterMarketGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getway-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/configs/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/configs/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/controllers/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/integration/ProductServiceIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/integration/ProductServiceIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/servicies/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/market/carts/servicies/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/configs/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/configs/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/configs/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/market/auth/config/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/market/auth/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/market/auth/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/controllers/ProductEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/controllers/ProductEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/entities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/market/auth/entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/market/auth/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/integration/CartServiceIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/integration/CartServiceIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/repositories/OrderItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/market/auth/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/servicies/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/market/core/servicies/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/servicies/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/market/auth/servicies/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/market/core/utils/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/market/auth/utils/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/db/migration/V1__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/db/migration/V1__init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/basket.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/basket.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/bg_page.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/bg_page.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/bear.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/carts/bear.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/cat_hairstyle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/carts/cat_hairstyle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/magic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/carts/magic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/morningcoffee.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/carts/morningcoffee.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/peace.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/carts/peace.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/carts/submarine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/carts/submarine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/maney.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/maney.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/menu_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/menu_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/packing.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/packing.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/privacy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/privacy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/returns.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/returns.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/images/truck.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/images/truck.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-service/src/main/resources/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,23 +110,34 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Hobby/BeekBrain/GB_Spring_2/winter-market-ms/cart-service/src/main/java/market/carts"
+    "last_opened_file_path": "C:/Hobby/BeekBrain/GB_Spring_2/winter-market-ms/auth-service/src/main/java/market/auth",
+    "settings.editor.selected.configurable": "spring.boot",
+    "spring.configuration.checksum": "7319982fe5a9b511e1d0667e32170261"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Hobby\BeekBrain\GB_Spring_2\winter-market-ms\cart-service\src\main\java\market\carts" />
-      <recent name="C:\Hobby\BeekBrain\GB_Spring_2\winter-market-ms\cart-service\src\main\resources" />
+      <recent name="C:\Hobby\BeekBrain\GB_Spring_2\winter-market-ms\auth-service\src\main\java\market\auth" />
+      <recent name="C:\Hobby\BeekBrain\GB_Spring_2\winter-market-ms\auth-service\src\main\resources\db.migration" />
+      <recent name="C:\Hobby\BeekBrain\GB_Spring_2\winter-market-ms\auth-service\src\main\resources" />
+      <recent name="C:\Hobby\BeekBrain\GB_Spring_2\winter-market-ms\getway-service\src\main\resources" />
+      <recent name="C:\Hobby\BeekBrain\GB_Spring_2\winter-market-ms\front-service\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Hobby\BeekBrain\GB_Spring_2\winter-market-ms\front-service\src\main\resources\static" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="market" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="market.core.properties" />
+      <recent name="market.core.integration" />
+      <recent name="market.auth.repositories" />
+      <recent name="market.auth" />
       <recent name="market.carts.exceptions" />
-      <recent name="market.carts.servicies" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.WinterMarketCartsApplication">
+  <component name="RunManager" selected="Spring Boot.WinterMarketGatewayApplication">
     <configuration name="WinterMarketApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="core-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="market.WinterMarketApplication" />
@@ -169,6 +154,19 @@
     <configuration name="WinterMarketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="core-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.geelbrains.spring.winter.market.WinterMarketApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WinterMarketAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="market.auth.WinterMarketAuthApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="market.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,14 +191,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WinterMarketFrontApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="front-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="market.front.WinterMarketFrontApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="market.front.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WinterMarketGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="getway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="market.getway.WinterMarketGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="market.getway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.WinterMarketGatewayApplication" />
+        <item itemvalue="Spring Boot.WinterMarketAuthApplication" />
+        <item itemvalue="Spring Boot.WinterMarketFrontApplication" />
         <item itemvalue="Spring Boot.WinterMarketCoreApplication" />
         <item itemvalue="Spring Boot.WinterMarketApplication (1)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bacc8f94-c6f0-42fc-9d18-f7313e47602d" name="Changes" comment="" />
@@ -208,7 +238,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671970556351</updated>
-      <workItem from="1671970558274" duration="17080000" />
+      <workItem from="1671970558274" duration="17753000" />
+      <workItem from="1672068583624" duration="6892000" />
+      <workItem from="1672130854106" duration="20487000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1671970685038</created>
@@ -217,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671970685038</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created modules core-service and cart-service. Into the core-service added integration with the cart-service. Added url for the integration into  .yaml files into core and cart services">
+      <created>1671989335364</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671989335364</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +275,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Created modules core-service and cart-service. Into the core-service added integration with the cart-service. Added url for the integration into  .yaml files into core and cart services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created modules core-service and cart-service. Into the core-service added integration with the cart-service. Added url for the integration into  .yaml files into core and cart services" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

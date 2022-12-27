@@ -16,6 +16,9 @@
         <module>core-service</module>
         <module>cart-service</module>
         <module>api</module>
+        <module>front-service</module>
+        <module>getway-service</module>
+        <module>auth-service</module>
     </modules>
 
     <properties>

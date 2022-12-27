@@ -1,0 +1,46 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      global-cors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins: "http://localhost:3000"
+            allowed-methods:
+              - GET
+              - POST
+            allowedHeaders: "*"
+      routes:
+        - id: core-service
+          uri: http://localhost:8189
+          predicates:
+            - Path=/core/**
+          filters:
+            - StripPrefix=1
+            - PrefixPath=/winter-market-core
+            - JwtAuthFilter
+        - id: cart-service
+          uri: http://localhost:8190
+          predicates:
+            - Path=/cart/**
+          filters:
+            - StripPrefix=1
+            - PrefixPath=/winter-market-carts
+            - JwtAuthFilter
+        - id: auth-service
+          uri: http://localhost:8188
+          predicates:
+            - Path=/auth/**
+          filters:
+            - StringPrefix=1
+            - PrefixPath=/winter-market-auth
+            - JwtAuthFilter
+
+jwt:
+  secret: KdsjSKJefsfs49*#*#435DFCregdfvc453*Difjslkj834rj${$JJDKsj34jLKSJDF*$FSLk
+
+
