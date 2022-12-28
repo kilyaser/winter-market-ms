@@ -3,10 +3,23 @@ angular.module('app', ['ngStorage']).controller('indexController', function ($sc
     const cartContextPath = 'http://localhost:5555/cart/api/v1/cart'
     const authPath = 'http://localhost:5555/auth/token'
 
-    $scope.loadProducts = function () {
-        $http.get(contextPath)
-            .then(function (response) {
-                $scope.productsList = response.data;
+    // $scope.loadProducts = function () {
+    //     $http.get(contextPath)
+    //         .then(function (response) {
+    //             $scope.productsList = response.data;
+    //     });
+    // };
+    $scope.loadProducts = function (pageIndex = 1) {
+        $http({
+            url: contextPath,
+            method: 'GET',
+            params: {
+                title_part: $scope.filter ? $scope.filter.title_part : null,
+                min_price: $scope.filter ? $scope.filter.min_price : null,
+                max_price: $scope.filter ? $scope.filter.max_price : null
+            }
+        }).then(function (response) {
+            $scope.productsPage = response.data.content;
         });
     };
 
