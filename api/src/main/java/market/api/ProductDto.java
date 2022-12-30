@@ -1,11 +1,12 @@
 package market.api;
 
 
+import java.math.BigDecimal;
 
 public class ProductDto {
     private Long id;
     private String title;
-    private int price;
+    private BigDecimal price;
     private String categoryTitle;
     private int height;
     private int weight;
@@ -28,11 +29,11 @@ public class ProductDto {
         this.title = title;
     }
 
-    public int getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 

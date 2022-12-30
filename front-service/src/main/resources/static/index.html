@@ -97,31 +97,33 @@
 
 <div class="container-fluid cart-container" id="cartContainer">
   <div class="container">
-<!--  <h1>Store</h1>-->
-<!--  <br>-->
-<!--  <h3 id="products">Каталог товаров</h3>-->
-<!--  <table class="table table-hover">-->
-<!--    <tr class="table-light">-->
-<!--      <td>ID</td>-->
-<!--      <td>Tittle</td>-->
-<!--      <td>Price</td>-->
-<!--      <td>Buy now</td>-->
-<!--    </tr>-->
-<!--    <tbody>-->
-<!--    <tr ng-repeat="p in productsList">-->
-<!--      <td>{{p.id}}</td>-->
-<!--      <td>{{p.title}}</td>-->
-<!--      <td>{{p.price}}</td>-->
-<!--      <td>-->
-<!--        <button i type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" title="add to shopping cart" ng-click="addToCart(p.id)">Buy-->
-<!--        </button>-->
-<!--      </td>-->
-<!--    </tr>-->
-<!--    </tbody>-->
-<!--  </table>-->
+    <div class="container-fluid filter-container">
+      <div class="container">
+        <form novalidate ng-submit="loadProducts()">
+          <div class="filter-container">
+            <div class="form-floating input-group-sm">
+              <input type="text" class="form-control" id="filterTitle" placeholder="" ng-model="filter.title_part">
+              <label for="filterTitle">Название продукта</label>
+            </div>
+            <p></p>
+            <div class="form-floating input-group-sm">
+              <input type="number" class="form-control" id="filterMinPrice" placeholder="" ng-model="filter.min_price">
+              <label for="filterMinPrice">Мин. цена</label>
+            </div>
+            <p></p>
+            <div class="form-floating input-group-sm">
+              <input type="number" class="form-control" id="filterMaxPrice" placeholder="" ng-model="filter.max_price">
+              <label for="filterMaxPrice">Макс. цена</label>
+            </div>
+            <p></p>
+            <button class="btn btn-outline-warning btn-sm" type="submit">Применить</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <div><h1 class="fw-bold title-cart">Featured Artworks</h1></div>
   <div class="row d-flex justify-content-between card-border">
-    <div class="card mb-5 "  ng-repeat="p in productsList">
+    <div class="card mb-5 "  ng-repeat="p in productsPage">
       <a href="#"><img src="{{p.image}}" class="card-img-top" alt="..."></a>
       <div class="card-body">
         <h5 class="card-title">{{p.title}}</h5>

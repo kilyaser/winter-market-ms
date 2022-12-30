@@ -1,9 +1,10 @@
 package market.api;
 
 
+import java.math.BigDecimal;
 
 public class OrderItemDto {
-    public OrderItemDto(Long id, int quantity, int pricePerProduct, int price) {
+    public OrderItemDto(Long id, int quantity, BigDecimal pricePerProduct, BigDecimal price) {
         this.id = id;
         this.quantity = quantity;
         this.pricePerProduct = pricePerProduct;
@@ -26,24 +27,24 @@ public class OrderItemDto {
         this.quantity = quantity;
     }
 
-    public int getPricePerProduct() {
+    public BigDecimal getPricePerProduct() {
         return pricePerProduct;
     }
 
-    public void setPricePerProduct(int pricePerProduct) {
+    public void setPricePerProduct(BigDecimal pricePerProduct) {
         this.pricePerProduct = pricePerProduct;
     }
 
-    public int getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 
     private Long id;
     private int quantity;
-    private int pricePerProduct;
-    private int price;
+    private BigDecimal pricePerProduct;
+    private BigDecimal price;
 }

@@ -13,6 +13,8 @@ import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlType;
 
+import java.math.BigDecimal;
+
 
 /**
  * <p>Java class for productSoapDto complex type.
@@ -56,7 +58,7 @@ public class ProductSoapDto {
     protected long id;
     @XmlElement(required = true)
     protected String title;
-    protected int price;
+    protected BigDecimal price;
     @XmlElement(required = true)
     protected String categoryTitle;
     protected int height;
@@ -110,7 +112,7 @@ public class ProductSoapDto {
      * Gets the value of the price property.
      * 
      */
-    public int getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
@@ -118,7 +120,7 @@ public class ProductSoapDto {
      * Sets the value of the price property.
      * 
      */
-    public void setPrice(int value) {
+    public void setPrice(BigDecimal value) {
         this.price = value;
     }
 
